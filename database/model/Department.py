@@ -30,3 +30,10 @@ class Department(AbstractEntity):
 
     def __repr__(self):
         return f"Department(dept_no={self.dept_no}, dept_name={self.dept_name}, emp_no={self.emp_no})"
+
+    def toDict(self):
+        return {
+            "dept_no": self.dept_no,
+            "dept_name": self.dept_name,
+            "emp_no": self.emp_no
+        }

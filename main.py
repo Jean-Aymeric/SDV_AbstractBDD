@@ -1,9 +1,6 @@
-from database.model import Employee
+from database.model import Department
 
-# departments = Department.getAll()
-# for department in departments:
-#    print(department)
-
-employees = Employee.getAll()
-for employee in employees:
-    print(employee)
+departments = Department.getAll()
+for department in departments:
+    print(department)
+    print(department.toDict())
